@@ -1,0 +1,51 @@
+.app-background {
+  background-color: #f8f9fd;
+  height: 100%;
+}
+
+.app-header {
+  background-color: #6bece7;
+  height: 25vh;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.title {
+  /* background-color: blue; */
+  padding: 0.05vh;
+}
+
+.title-text {
+  text-align: center;
+}
+
+.circle-pos {
+  display: flex;
+  /* background-color: cyan; */
+  justify-content: center;
+  height: 10vh;
+}
+
+.circle {
+  background-color: white;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 15vh;
+  margin-top: -15vh;
+  justify-content: center;
+  align-items: center;
+}
+.circle-inner {
+  width: 28vh;
+  height: 28vh;
+  border-radius: 14vh;
+  background-color: black;
+}
+
+.button-area {
+  margin-top: 10vh;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
