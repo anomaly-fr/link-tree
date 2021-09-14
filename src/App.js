@@ -28,7 +28,9 @@ const App = () => {
     <div className={darkMode ? 'app-background-dark' : 'app-background'}>
       <div className={darkMode ? 'app-header-dark' : 'app-header'}>
         <div className={darkMode ? 'app-header-left-dark' : 'app-header-left'}>
-          <p className="app-header-text">Anam Ali</p>
+          <div className="app-header-text-div">
+            <p className="app-header-text">Anam Ali</p>
+          </div>
         </div>
         <div className="switch">
           {darkMode ? (
@@ -47,7 +49,6 @@ const App = () => {
         </div>
       </div>
       <div className="circle-pos">
-        {/* <div className="circle"> */}
         <img src={me} className="circle"></img>
         {/* </div> */}
       </div>
