@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Button.css'
 import {
   AiOutlineInstagram,
@@ -7,15 +7,22 @@ import {
   AiOutlineLinkedin,
 } from 'react-icons/ai'
 
-const Button = ({ name, link }) => {
+const Button = ({ dark, name, link }) => {
   return (
-    <div className="button">
+    <div
+      onClick={() => {
+        const newWindow = window.open(link, '_blank', 'noopener,noreferrer')
+        if (newWindow) newWindow.opener = null
+      }}
+      className={dark ? 'button-dark' : 'button'}
+    >
       <div className="button-title">
         <p className="button-title-text">{name}</p>
       </div>
       <div className="button-edge">
-        <div className="shape" />
-        <div className="button-logo">{logoIcon(name)}</div>
+        <div className={dark ? 'button-logo-dark' : 'button-logo'}>
+          {logoIcon(name)}
+        </div>
       </div>
     </div>
   )
