@@ -1,5 +1,5 @@
 .app-background {
-  /* background-color: slateblue; */
+  background-color: white; 
   display: flex;
   flex-direction: column;
   background-size: cover;
